@@ -2,14 +2,13 @@ import React from 'react';
 import './PockmonCard.scss';
 
 function PokemonCard(props) {
-    console.log("props",props);
     const pData = props.data;
     const name = pData && pData.pokemon && pData.pokemon.name;
     const id = props.id;
     const imgUrl =  pData && pData.pokemon && pData.pokemon.url;
     return (
         <div className='card px-[30px] pt-[20px]'>
-            <div className='cardTitle flex justify-center'>Card</div>
+            <div className='cardTitle flex justify-center'>Pokedex</div>
             <div className='flex items-center mt-[40px] mb-[50px]'>
                 <div className='text-[18px] text-[#fff]'>
                     <div>
@@ -24,7 +23,7 @@ function PokemonCard(props) {
 
                 <div className='ml-auto'>
                     <img
-                        src='https://picsum.photos/seed/picsum/200/300'
+                        src={`https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${id+1}.svg`}
                         className='w-[170px] h-[170px] rounded-lg'
                     />
                 </div>
