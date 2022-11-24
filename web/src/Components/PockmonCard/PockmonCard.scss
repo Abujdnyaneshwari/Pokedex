@@ -1,0 +1,32 @@
+.card {
+    height: 30rem;
+    background-color: #3c5aa6;
+    margin: 2rem;
+    border-radius: 1rem;
+    flex: 0 0 24%;
+    text-decoration: none;
+    transition: all 0.2s;
+    width: 30rem;
+    height: 30rem;
+}
+
+.cardTitle {
+    color: #ebebeb;
+    font-size: 4rem;
+    font-family: "Miltonian Tattoo";
+    text-transform: capitalize;
+}
+.cardImg {
+    height: 25rem;
+    width: 25rem;
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(14, 17, 17, 0.6);
+    cursor: pointer;
+}
+.card:active,
+.card:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(14, 17, 17, 0.35);
+}
